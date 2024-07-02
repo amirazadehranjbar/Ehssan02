@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-class Button08controller extends GetxController {
+class Button01controllerList02 extends GetxController {
   final AudioPlayer audioPlayer = AudioPlayer();
   var isPlaying = false.obs;
   var isPaused = false.obs;
@@ -35,7 +35,7 @@ class Button08controller extends GetxController {
     });
 
     Future.microtask(() async {
-      await audioPlayer.setSource(AssetSource('DoubleDichoticDigits/List 7.wav')); // DoubleDichoticDigits/List 1.wav
+      await audioPlayer.setSource(AssetSource('DoubleDichoticDigits/List 6.wav')); // DoubleDichoticDigits/List 1.wav
     });
   }
 

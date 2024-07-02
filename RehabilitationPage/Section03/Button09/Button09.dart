@@ -81,17 +81,12 @@ class Section03Button09Screen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ////////////////// EXT A 01 Count And Percent
-                    ResultWidget(textName: "ETX A 01 :",textResults: controller.calculateCorrectEXTA01Answers().toString()),
-                    ResultWidget(textName: "ETX A 01 Percent :",textResults: "${controller.calculateCorrectEXTA01AnswersPercent().toInt()} %"),
+                    ResultWidget(textName: "ETX A:",textResults: controller.calculateCorrectEXTA01Answers().toString()),
+                    ResultWidget(textName: "ETX A Percent :",textResults: "${controller.calculateCorrectEXTA01AnswersPercent().toInt()} %"),
                     ////////////////// EXT A 02 Count And Percent
-                    ResultWidget(textName: "ETX A 02 :",textResults: controller.calculateCorrectEXTA02Answers().toString()),
-                    ResultWidget(textName: "ETX A 02 Percent :",textResults: "${controller.calculateCorrectEXTA02AnswersPercent().toInt()} %"),
-                    ////////////////// EXT B 01 Count And Percent
-                    ResultWidget(textName: "ETX B 01 :",textResults: controller.calculateCorrectEXTB01Answers().toString()),
-                    ResultWidget(textName: "ETX B 01 Percent :",textResults: "${controller.calculateCorrectEXTB01AnswersPercent().toInt()} %"),
-                    ////////////////// EXT B 02 Count And Percent
-                    ResultWidget(textName: "ETX B 02 :",textResults: controller.calculateCorrectEXTB02Answers().toString()),
-                    ResultWidget(textName: "ETX B 02 Percent :",textResults: "${controller.calculateCorrectEXTB02AnswersPercent().toInt()} %"),
+                    ResultWidget(textName: "ETX B :",textResults: controller.calculateCorrectEXTA02Answers().toString()),
+                    ResultWidget(textName: "ETX B Percent :",textResults: "${controller.calculateCorrectEXTA02AnswersPercent().toInt()} %"),
+
 
                     FloatingActionButton(onPressed: (){Get.toNamed("SectionThree");},child: Icon(Icons.arrow_back),)
                   ],

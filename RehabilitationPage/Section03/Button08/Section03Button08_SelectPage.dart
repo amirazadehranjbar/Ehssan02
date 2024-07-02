@@ -1,22 +1,23 @@
 import 'package:ehssam01/FontColors.dart';
 import 'package:ehssam01/Widgets/HelpBackWidget.dart';
 import 'package:ehssam01/Widgets/MyAppBarWidget.dart';
-import 'package:ehssam01/pages/RehabilitationPage/Section03/Button01/List6/Button01List06.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+import 'package:ehssam01/pages/RehabilitationPage/Section03/Button08/List2/Button01List01.dart';
 
-import 'List1/Button01List01.dart';
+import 'List7/Button01List07.dart';
 
-class Section03Button01SelectPage extends StatelessWidget {
-  const Section03Button01SelectPage({super.key});
+
+class Section03Button08SelectPage extends StatelessWidget {
+  const Section03Button08SelectPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(
         pageNumber: "برنامه توان بخشی",
-        titleText: "بخش 1,جلسه 3",
+        titleText: "جلسه 3,بخش 8",
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -25,20 +26,20 @@ class Section03Button01SelectPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ElevatedButton(
-                  onPressed: () {Get.to(Section03ButtonList06Screen());},
+                  onPressed: () {Get.to(()=>Section03ButtonList07Screen());},
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "لیست ۶ (۷۵)",
+                      "لیست 7 (۷۵)",
                       style: MyTextStyles.large_2,
                     ),
                   )),
               ElevatedButton(
-                  onPressed: () {Get.to(Section03ButtonList01Screen());},
+                  onPressed: () {Get.to(()=>Section03ButtonList01Screen());},
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "لیست 1 (۷۵)",
+                      "لیست 2 (50)",
                       style: MyTextStyles.large_2,
                     ),
                   )),
@@ -53,3 +54,4 @@ class Section03Button01SelectPage extends StatelessWidget {
     );
   }
 }
+

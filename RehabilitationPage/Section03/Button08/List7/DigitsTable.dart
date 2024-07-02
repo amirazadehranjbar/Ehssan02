@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../../../../FontColors.dart';
+import 'Button01ControllerList07.dart';
+import 'package:ehssam01/pages/RehabilitationPage/Section03/Button08/List2/Button01DigitsListList02.dart';
 
-import '../../../../FontColors.dart';
-import 'Button08Controller.dart';
-import 'Button08DigitsList.dart';
 
-class DigitsTable extends StatelessWidget {
-  const DigitsTable({
+
+class DigitsTableList07 extends StatelessWidget {
+  const DigitsTableList07({
     super.key,
     required this.controller,
   });
 
-  final Button08controller controller;
+  final Button01controllerList07 controller;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +44,7 @@ class DigitsTable extends StatelessWidget {
                       cells: [
 
                         ////////////////////////////////////////////////////////
-                        DataCell(Text(Button08DigitsList.EXTA01[index])),
+                        DataCell(Text(Button01DigitsListList02.EXTA01[index])),
                         DataCell(
                           Checkbox(
                             value: controller.EXTA01CheckboxStates[index],
@@ -54,7 +55,7 @@ class DigitsTable extends StatelessWidget {
                           ),
                         ),
                         ////////////////////////////////////////////////////////
-                        DataCell(Text(Button08DigitsList.EXTA02[index])),
+                        DataCell(Text(Button01DigitsListList02.EXTB01[index])),
                         DataCell(
                           Checkbox(
                             value: controller.EXTA02CheckboxStates[index],
@@ -65,7 +66,7 @@ class DigitsTable extends StatelessWidget {
                           ),
                         ),
                         ////////////////////////////////////////////////////////
-                        DataCell(Text(Button08DigitsList.EXTB01[index])),
+                        DataCell(Text(Button01DigitsListList02.EXTA01[index])),
                         DataCell(
                           Checkbox(
                             value: controller.EXTB01CheckboxStates[index],
@@ -76,7 +77,7 @@ class DigitsTable extends StatelessWidget {
                           ),
                         ),
                         ////////////////////////////////////////////////////////
-                        DataCell(Text(Button08DigitsList.EXTB02[index])),
+                        DataCell(Text(Button01DigitsListList02.EXTA01[index])),
                         DataCell(
                           Checkbox(
                             value: controller.EXTB02CheckboxStates[index],

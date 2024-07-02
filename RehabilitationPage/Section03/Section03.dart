@@ -60,13 +60,13 @@ class SectionThree extends StatelessWidget {
               SizedBox(
                   height: 5.h,
                   width: 25.w,
-                  child: ButtonSectionSelection(TextButton: "۸. دایکوتیک اعداد (۵۰/۷۵)\nلیست ۷/ لیست ۲",PageToGo: "Section03Button08Screen",)
+                  child: ButtonSectionSelection(TextButton: "۸. دایکوتیک اعداد (۵۰/۷۵)\nلیست ۷/ لیست ۲",PageToGo: "Section03Button08SelectPage",)
               ),
               //// //////////////////////////// 7
               SizedBox(
                   height: 5.h,
                   width: 25.w,
-                  child: ButtonSectionSelection(TextButton: "۷. دایکوتیک اسپوندی (۲۰)\nلیست ۵",PageToGo: "Section03Button07Screen",)
+                  child: ButtonSectionSelection(TextButton: "۷. دایکوتیک اسپوندی (۲۰)\nلیست ۵",PageToGo: "Section03Button08SelectPage",)
               ),
               ///////////////////////////////// 6
               SizedBox(

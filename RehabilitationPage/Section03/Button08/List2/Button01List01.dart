@@ -3,19 +3,21 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'package:ehssam01/Widgets/MyAppBarWidget.dart';
-import 'Button08Controller.dart';
-import 'DigitsTable.dart';
+import 'package:ehssam01/pages/RehabilitationPage/Section03/Button08/List2/Button01ControllerList02.dart';
+import 'package:ehssam01/pages/RehabilitationPage/Section03/Button08/List2/DigitsTable.dart';
 
 
 
-class Section03Button08Screen extends StatelessWidget {
-  final controller = Get.put(Button08controller());
+
+
+class Section03ButtonList01Screen extends StatelessWidget {
+  final controller = Get.put(Button01controllerList02());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(
-        titleText: "جلسه 3_بخش 8",
+        titleText: "جلسه 3,بخش 8,لیست 02,",
         pageNumber: "برنامه توانبخشی",
       ),
       body: Column(
@@ -78,24 +80,24 @@ class Section03Button08Screen extends StatelessWidget {
           ////////////////// Show Results //////////////////////////////////////////////////
           Obx(
                 () => Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    ////////////////// EXT A 01 Count And Percent
-                    ResultWidget(textName: "ETX A 01 :",textResults: controller.calculateCorrectEXTA01Answers().toString()),
-                    ResultWidget(textName: "ETX A 01 Percent :",textResults: "${controller.calculateCorrectEXTA01AnswersPercent().toInt()} %"),
-                    ////////////////// EXT A 02 Count And Percent
-                    ResultWidget(textName: "ETX A 02 :",textResults: controller.calculateCorrectEXTA02Answers().toString()),
-                    ResultWidget(textName: "ETX A 02 Percent :",textResults: "${controller.calculateCorrectEXTA02AnswersPercent().toInt()} %"),
-                    ////////////////// EXT B 01 Count And Percent
-                    ResultWidget(textName: "ETX B 01 :",textResults: controller.calculateCorrectEXTB01Answers().toString()),
-                    ResultWidget(textName: "ETX B 01 Percent :",textResults: "${controller.calculateCorrectEXTB01AnswersPercent().toInt()} %"),
-                    ////////////////// EXT B 02 Count And Percent
-                    ResultWidget(textName: "ETX B 02 :",textResults: controller.calculateCorrectEXTB02Answers().toString()),
-                    ResultWidget(textName: "ETX B 02 Percent :",textResults: "${controller.calculateCorrectEXTB02AnswersPercent().toInt()} %"),
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ////////////////// EXT A 01 Count And Percent
+                ResultWidget(textName: "ETX A 01 :",textResults: controller.calculateCorrectEXTA01Answers().toString()),
+                ResultWidget(textName: "ETX A 01 Percent :",textResults: "${controller.calculateCorrectEXTA01AnswersPercent().toInt()} %"),
+                ////////////////// EXT A 02 Count And Percent
+                ResultWidget(textName: "ETX A 02 :",textResults: controller.calculateCorrectEXTA02Answers().toString()),
+                ResultWidget(textName: "ETX A 02 Percent :",textResults: "${controller.calculateCorrectEXTA02AnswersPercent().toInt()} %"),
+                ////////////////// EXT B 01 Count And Percent
+                ResultWidget(textName: "ETX B 01 :",textResults: controller.calculateCorrectEXTB01Answers().toString()),
+                ResultWidget(textName: "ETX B 01 Percent :",textResults: "${controller.calculateCorrectEXTB01AnswersPercent().toInt()} %"),
+                ////////////////// EXT B 02 Count And Percent
+                ResultWidget(textName: "ETX B 02 :",textResults: controller.calculateCorrectEXTB02Answers().toString()),
+                ResultWidget(textName: "ETX B 02 Percent :",textResults: "${controller.calculateCorrectEXTB02AnswersPercent().toInt()} %"),
 
-                    FloatingActionButton(onPressed: (){Get.toNamed("SectionThree");},child: Icon(Icons.arrow_back),)
-                  ],
-                ),
+                FloatingActionButton(onPressed: (){Get.toNamed("Section03Button01Screen");},child: Icon(Icons.arrow_back),)
+              ],
+            ),
           ),
         ],
       ),
@@ -109,7 +111,7 @@ class Section03Button08Screen extends StatelessWidget {
 class ResultWidget extends StatelessWidget {
   const ResultWidget({
     super.key,
-     this.textResults, this.textName,
+    this.textResults, this.textName,
   });
 
   final textResults;
