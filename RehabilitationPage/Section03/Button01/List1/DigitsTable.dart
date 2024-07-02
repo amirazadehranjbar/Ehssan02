@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../../../../FontColors.dart';
+import '../../../../../FontColors.dart';
 import 'Button01Controller.dart';
 import 'Button01DigitsList.dart';
 
@@ -11,7 +10,7 @@ class DigitsTable extends StatelessWidget {
     required this.controller,
   });
 
-  final Button01controller controller;
+  final Button01controllerList01 controller;
 
   @override
   Widget build(BuildContext context) {

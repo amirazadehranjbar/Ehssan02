@@ -1,4 +1,3 @@
-import 'package:ehssam01/pages/RehabilitationPage/Section01/Button02/Button02DigitsList.dart';
 import 'package:get/get.dart';
 import 'package:audioplayers/audioplayers.dart';
 
@@ -10,10 +9,10 @@ class Button02controller extends GetxController {
   var duration = Duration.zero.obs;
   var position = Duration.zero.obs;
 
-  var EXTA01CheckboxStates = List<bool>.filled(Button02DigitsList.EXTA01.length, false).obs;
-  var EXTA02CheckboxStates = List<bool>.filled(Button02DigitsList.EXTA01.length, false).obs;
-  var EXTB01CheckboxStates = List<bool>.filled(Button02DigitsList.EXTA01.length, false).obs;
-  var EXTB02CheckboxStates = List<bool>.filled(Button02DigitsList.EXTA01.length, false).obs;
+  var EXTA01CheckboxStates = List<bool>.filled(20, false).obs;
+  var EXTA02CheckboxStates = List<bool>.filled(20, false).obs;
+  var EXTB01CheckboxStates = List<bool>.filled(20, false).obs;
+  var EXTB02CheckboxStates = List<bool>.filled(20, false).obs;
 
   @override
   void onInit() {
@@ -70,7 +69,7 @@ class Button02controller extends GetxController {
   }
 
   double calculateCorrectEXTA01AnswersPercent() {
-    return (calculateCorrectEXTA01Answers() / Button02DigitsList.EXTA01.length) * 100;
+    return (calculateCorrectEXTA01Answers() / 20) * 100;
   }
 
   int calculateCorrectEXTA02Answers() {
@@ -78,7 +77,7 @@ class Button02controller extends GetxController {
   }
 
   double calculateCorrectEXTA02AnswersPercent() {
-    return (calculateCorrectEXTA02Answers() / Button02DigitsList.EXTA01.length) * 100;
+    return (calculateCorrectEXTA02Answers() / 20) * 100;
   }
 
 
@@ -92,7 +91,7 @@ class Button02controller extends GetxController {
   }
 
   double calculateCorrectEXTB01AnswersPercent() {
-    return (calculateCorrectEXTB01Answers() / Button02DigitsList.EXTA01.length) * 100;
+    return (calculateCorrectEXTB01Answers() / 20) * 100;
   }
 
   int calculateCorrectEXTB02Answers() {
@@ -100,7 +99,7 @@ class Button02controller extends GetxController {
   }
 
   double calculateCorrectEXTB02AnswersPercent() {
-    return (calculateCorrectEXTB02Answers() / Button02DigitsList.EXTA01.length) * 100;
+    return (calculateCorrectEXTB02Answers() / 20) * 100;
   }
 
 

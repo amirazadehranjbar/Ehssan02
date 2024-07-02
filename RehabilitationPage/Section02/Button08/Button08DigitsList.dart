@@ -1,10 +1,6 @@
 class Button08DigitsList {
-  static const List<String> EXTA01 = [
-    "1",
-    "1",
-    "1",
-    "1",
-    "1",
+  static const List<String> EXTA = [
+
     "1",
     "1",
     "1",
@@ -27,12 +23,8 @@ class Button08DigitsList {
     "1",
 
   ];
-  static const List<String> EXTA02 = [
-    "2",
-    "2",
-    "2",
-    "2",
-    "2",
+  static const List<String> EXTB = [
+
     "2",
     "2",
     "2",
@@ -55,60 +47,6 @@ class Button08DigitsList {
     "2",
 
   ];
-  static const List<String> EXTB01 = [
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
-   "3",
 
-  ];
-  static const List<String> EXTB02 = [
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-    "4",
-  ];
 
 }

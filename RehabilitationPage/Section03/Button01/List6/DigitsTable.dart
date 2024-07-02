@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../../../../FontColors.dart';
-import 'Button02Controller.dart';
-import 'Button02DigitsList.dart';
+import '../../../../../FontColors.dart';
+import 'Button01ControllerList06.dart';
+import 'Button01DigitsListList06.dart';
 
 class DigitsTable extends StatelessWidget {
   const DigitsTable({
@@ -11,7 +10,7 @@ class DigitsTable extends StatelessWidget {
     required this.controller,
   });
 
-  final Button02controller controller;
+  final Button01controllerList06 controller;
 
   @override
   Widget build(BuildContext context) {
@@ -28,19 +27,22 @@ class DigitsTable extends StatelessWidget {
                       border: Border.all(color: Colors.white30, width: 2),
                       borderRadius: BorderRadius.circular(10)),
                   columns:  [
-                    DataColumn(label: Text('EXT_A', style:  MyTextStyles.large_2)),
+                    DataColumn(label: Text('EXT_A Column 1', style:  MyTextStyles.large_2)),
                     DataColumn(label: Text('Answers', style:  MyTextStyles.large_2)),
-                    DataColumn(label: Text('EXT_B', style:  MyTextStyles.large_2)),
+                    DataColumn(label: Text('EXT_A Column 2', style:  MyTextStyles.large_2)),
                     DataColumn(label: Text('Answers', style:  MyTextStyles.large_2)),
-
+                    DataColumn(label: Text('EXT_B Column 1', style:  MyTextStyles.large_2)),
+                    DataColumn(label: Text('Answers', style:  MyTextStyles.large_2)),
+                    DataColumn(label: Text('EXT_B Column 2', style:  MyTextStyles.large_2)),
+                    DataColumn(label: Text('Answers', style:  MyTextStyles.large_2)),
                   ],
                   rows: List<DataRow>.generate(
-                    32,
+                    25,
                         (index) => DataRow(
                       cells: [
 
                         ////////////////////////////////////////////////////////
-                        DataCell(Text(Button02DigitsList.EXTA[index])),
+                        DataCell(Text(Button01DigitsListList06.EXTA01[index])),
                         DataCell(
                           Checkbox(
                             value: controller.EXTA01CheckboxStates[index],
@@ -51,7 +53,7 @@ class DigitsTable extends StatelessWidget {
                           ),
                         ),
                         ////////////////////////////////////////////////////////
-                        DataCell(Text(Button02DigitsList.EXTB[index])),
+                        DataCell(Text(Button01DigitsListList06.EXTA02[index])),
                         DataCell(
                           Checkbox(
                             value: controller.EXTA02CheckboxStates[index],
@@ -61,7 +63,28 @@ class DigitsTable extends StatelessWidget {
                             },
                           ),
                         ),
-
+                        ////////////////////////////////////////////////////////
+                        DataCell(Text(Button01DigitsListList06.EXTB01[index])),
+                        DataCell(
+                          Checkbox(
+                            value: controller.EXTB01CheckboxStates[index],
+                            onChanged: (bool? value) {
+                              controller.EXTB01CheckboxStates[index] =
+                              value!;
+                            },
+                          ),
+                        ),
+                        ////////////////////////////////////////////////////////
+                        DataCell(Text(Button01DigitsListList06.EXTB02[index])),
+                        DataCell(
+                          Checkbox(
+                            value: controller.EXTB02CheckboxStates[index],
+                            onChanged: (bool? value) {
+                              controller.EXTB02CheckboxStates[index] =
+                              value!;
+                            },
+                          ),
+                        ),
 
                       ],
                     ),

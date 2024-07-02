@@ -28,22 +28,19 @@ class DigitsTable extends StatelessWidget {
                       border: Border.all(color: Colors.white30, width: 2),
                       borderRadius: BorderRadius.circular(10)),
                   columns:  [
-                    DataColumn(label: Text('EXT_A Column 1', style:  MyTextStyles.large_2)),
+                    DataColumn(label: Text('EXT_A ', style:  MyTextStyles.large_2)),
                     DataColumn(label: Text('Answers', style:  MyTextStyles.large_2)),
-                    DataColumn(label: Text('EXT_A Column 2', style:  MyTextStyles.large_2)),
+                    DataColumn(label: Text('EXT_B', style:  MyTextStyles.large_2)),
                     DataColumn(label: Text('Answers', style:  MyTextStyles.large_2)),
-                    DataColumn(label: Text('EXT_B Column 1', style:  MyTextStyles.large_2)),
-                    DataColumn(label: Text('Answers', style:  MyTextStyles.large_2)),
-                    DataColumn(label: Text('EXT_B Column 2', style:  MyTextStyles.large_2)),
-                    DataColumn(label: Text('Answers', style:  MyTextStyles.large_2)),
+
                   ],
                   rows: List<DataRow>.generate(
-                    25,
+                    20,
                         (index) => DataRow(
                       cells: [
 
                         ////////////////////////////////////////////////////////
-                        DataCell(Text(Button05DigitsList.EXTA01[index])),
+                        DataCell(Text(Button05DigitsList.EXTA[index])),
                         DataCell(
                           Checkbox(
                             value: controller.EXTA01CheckboxStates[index],
@@ -54,7 +51,7 @@ class DigitsTable extends StatelessWidget {
                           ),
                         ),
                         ////////////////////////////////////////////////////////
-                        DataCell(Text(Button05DigitsList.EXTA02[index])),
+                        DataCell(Text(Button05DigitsList.EXTB[index])),
                         DataCell(
                           Checkbox(
                             value: controller.EXTA02CheckboxStates[index],
@@ -64,28 +61,7 @@ class DigitsTable extends StatelessWidget {
                             },
                           ),
                         ),
-                        ////////////////////////////////////////////////////////
-                        DataCell(Text(Button05DigitsList.EXTB01[index])),
-                        DataCell(
-                          Checkbox(
-                            value: controller.EXTB01CheckboxStates[index],
-                            onChanged: (bool? value) {
-                              controller.EXTB01CheckboxStates[index] =
-                              value!;
-                            },
-                          ),
-                        ),
-                        ////////////////////////////////////////////////////////
-                        DataCell(Text(Button05DigitsList.EXTB02[index])),
-                        DataCell(
-                          Checkbox(
-                            value: controller.EXTB02CheckboxStates[index],
-                            onChanged: (bool? value) {
-                              controller.EXTB02CheckboxStates[index] =
-                              value!;
-                            },
-                          ),
-                        ),
+
 
                       ],
                     ),

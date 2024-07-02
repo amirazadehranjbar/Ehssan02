@@ -9,10 +9,10 @@ class Button05controller extends GetxController {
   var duration = Duration.zero.obs;
   var position = Duration.zero.obs;
 
-  var EXTA01CheckboxStates = List<bool>.filled(25, false).obs;
-  var EXTA02CheckboxStates = List<bool>.filled(25, false).obs;
-  var EXTB01CheckboxStates = List<bool>.filled(25, false).obs;
-  var EXTB02CheckboxStates = List<bool>.filled(25, false).obs;
+  var EXTA01CheckboxStates = List<bool>.filled(20, false).obs;
+  var EXTA02CheckboxStates = List<bool>.filled(20, false).obs;
+  var EXTB01CheckboxStates = List<bool>.filled(20, false).obs;
+  var EXTB02CheckboxStates = List<bool>.filled(20, false).obs;
 
   @override
   void onInit() {
@@ -69,7 +69,7 @@ class Button05controller extends GetxController {
   }
 
   double calculateCorrectEXTA01AnswersPercent() {
-    return (calculateCorrectEXTA01Answers() / 25) * 100;
+    return (calculateCorrectEXTA01Answers() / 20) * 100;
   }
 
   int calculateCorrectEXTA02Answers() {
@@ -77,7 +77,7 @@ class Button05controller extends GetxController {
   }
 
   double calculateCorrectEXTA02AnswersPercent() {
-    return (calculateCorrectEXTA02Answers() / 25) * 100;
+    return (calculateCorrectEXTA02Answers() / 20) * 100;
   }
 
 
@@ -91,7 +91,7 @@ class Button05controller extends GetxController {
   }
 
   double calculateCorrectEXTB01AnswersPercent() {
-    return (calculateCorrectEXTB01Answers() / 25) * 100;
+    return (calculateCorrectEXTB01Answers() / 20) * 100;
   }
 
   int calculateCorrectEXTB02Answers() {
@@ -99,7 +99,7 @@ class Button05controller extends GetxController {
   }
 
   double calculateCorrectEXTB02AnswersPercent() {
-    return (calculateCorrectEXTB02Answers() / 25) * 100;
+    return (calculateCorrectEXTB02Answers() / 20) * 100;
   }
 
 

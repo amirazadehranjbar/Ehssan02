@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-class Button01controller extends GetxController {
+class Button01controllerList01 extends GetxController {
   final AudioPlayer audioPlayer = AudioPlayer();
   var isPlaying = false.obs;
   var isPaused = false.obs;

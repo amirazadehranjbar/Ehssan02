@@ -39,7 +39,7 @@ class SectionTwo extends StatelessWidget {
               SizedBox(
                   height: 5.h,
                   width: 25.w,
-                  child: ButtonSectionSelection(TextButton: "۲. دایکوتیک کلمات (۵۰)\nلیست ۴",PageToGo: "Section02Button02Screen",)
+                  child: ButtonSectionSelection(TextButton: "۲. دایکوتیک کلمات (۲۰)\nلیست ۴",PageToGo: "Section02Button02Screen",)
               ),
               ////////////////////////////////// 1
               SizedBox(

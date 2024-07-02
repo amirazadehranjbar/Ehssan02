@@ -1,21 +1,24 @@
 import 'package:ehssam01/FontColors.dart';
+import 'package:ehssam01/pages/RehabilitationPage/Section03/Button01/List6/DigitsTable.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'package:ehssam01/Widgets/MyAppBarWidget.dart';
-import 'Button08Controller.dart';
-import 'DigitsTable.dart';
+
+import 'Button01ControllerList06.dart';
 
 
 
-class Section02Button08Screen extends StatelessWidget {
-  final controller = Get.put(Button08controller());
+
+
+class Section03ButtonList06Screen extends StatelessWidget {
+  final controller = Get.put(Button01controllerList06());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(
-        titleText: "جلسه 2_بخش 8",
+        titleText: "لیست 06,جلسه 3_بخش 1",
         pageNumber: "برنامه توانبخشی",
       ),
       body: Column(
@@ -81,17 +84,23 @@ class Section02Button08Screen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ////////////////// EXT A 01 Count And Percent
-                    ResultWidget(textName: "ETX A:",textResults: controller.calculateCorrectEXTA01Answers().toString()),
-                    ResultWidget(textName: "ETX A Percent :",textResults: "${controller.calculateCorrectEXTA01AnswersPercent().toInt()} %"),
+                    ResultWidget(textName: "ETX A 01 :",textResults: controller.calculateCorrectEXTA01Answers().toString()),
+                    ResultWidget(textName: "ETX A 01 Percent :",textResults: "${controller.calculateCorrectEXTA01AnswersPercent().toInt()} %"),
                     ////////////////// EXT A 02 Count And Percent
-                    ResultWidget(textName: "ETX B:",textResults: controller.calculateCorrectEXTA02Answers().toString()),
-                    ResultWidget(textName: "ETX B Percent :",textResults: "${controller.calculateCorrectEXTA02AnswersPercent().toInt()} %"),
+                    ResultWidget(textName: "ETX A 02 :",textResults: controller.calculateCorrectEXTA02Answers().toString()),
+                    ResultWidget(textName: "ETX A 02 Percent :",textResults: "${controller.calculateCorrectEXTA02AnswersPercent().toInt()} %"),
+                    ////////////////// EXT B 01 Count And Percent
+                    ResultWidget(textName: "ETX B 01 :",textResults: controller.calculateCorrectEXTB01Answers().toString()),
+                    ResultWidget(textName: "ETX B 01 Percent :",textResults: "${controller.calculateCorrectEXTB01AnswersPercent().toInt()} %"),
+                    ////////////////// EXT B 02 Count And Percent
+                    ResultWidget(textName: "ETX B 02 :",textResults: controller.calculateCorrectEXTB02Answers().toString()),
+                    ResultWidget(textName: "ETX B 02 Percent :",textResults: "${controller.calculateCorrectEXTB02AnswersPercent().toInt()} %"),
+                    FloatingActionButton(onPressed: (){Get.toNamed("Section03Button01Screen");},child: Icon(Icons.arrow_back),)
 
-
-                    FloatingActionButton(onPressed: (){Get.toNamed("SectionTwo");},child: Icon(Icons.arrow_back),)
                   ],
                 ),
           ),
+
         ],
       ),
     );
